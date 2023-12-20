@@ -112,7 +112,9 @@ body {
       bottom:10%;
       right:10%;
 }
-
+#justification {
+    text-align:center;
+}
 .home .home-content .imaging .fitin {
     position:absolute;
     width:100%;
