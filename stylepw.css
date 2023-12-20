@@ -15,7 +15,6 @@
 
 :root {
 
-
     --bg-color: #081b29;
     --second-bg-color: #112e42;
     --text-color: #ededed;
@@ -42,12 +41,13 @@ body {
     left:0;
     width:100%;
     padding: 2rem 9%;
-    background: transparent;
+    background:var(--bg-color);
     display:flex;
     justify-content: space-between;
     align-items: center; 
     z-index:100;
     transition: .3s;
+    opacity:.9;
 }
 .header.sticky {
     background:var(--bg-color);
@@ -72,6 +72,7 @@ body {
 
 .spacing {
     letter-spacing: .3px;
+    text-align: justify;
 }
 
 
@@ -88,6 +89,10 @@ body {
 .navbar a:hover,
 .navbar a.active {
     color:var(--main-color);
+    background: var(--bg-color);
+    
+    /* opacity:0; */
+
 }
 
 
@@ -99,6 +104,23 @@ body {
     
 }
 
+.imaging {
+      position:absolute;
+      width:35%;
+      height:80%;
+      left:60%;
+      bottom:10%;
+      right:10%;
+}
+
+.home .home-content .imaging .fitin {
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding:1rem;
+
+}
+
 section {
     min-height:100vh;
     padding:10rem 9% 2rem;
@@ -108,7 +130,7 @@ section {
     display:flex;
     align-items:center;
     padding:0 9%;
-    background: url(Images/dream1.png) no-repeat;
+    /* background: url(Images/dream1.png) no-repeat; */
     background-size: cover;
     background-position: center;
 }
@@ -159,7 +181,6 @@ section {
     border-right:2px solid var(--main-color);
     z-index:-1;
     animation:homeCursorText 6s linear infinite;
-    
     animation-play-state: running;
 }
 
@@ -294,16 +315,18 @@ section {
     position:absolute;
     top:0;
     right:0;
-    width:40%;
+    width:42%;
     height:100%;
-    background: transparent;
-   transition:3s;
+    /* background:url('Images/andrew-neel-cckf4TsHAuw-unsplash.jpg'); */
+    background-image:url('Images/alexandru-acea-T5jXjei49uY-unsplash.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition:3s;
 }
 
 .home-imgHover:hover {
-    background:var(--bg-color);
     opacity:.8;
-
 }
 
 
@@ -623,14 +646,14 @@ span {
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width:80%;
+    width:75%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width:75%;
+    width:85%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width:70%;
+    width:90%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
     width:80%;
@@ -871,10 +894,8 @@ section:nth-child(odd) .animate.scroll {
     }
 
     .home {
-        background:var(--bg-color);
+        background: var(--bg-color);
     }
-
-    
 
     #menu-icon {
         display:block;
@@ -1062,23 +1083,4 @@ section:nth-child(odd) .animate.scroll {
     margin-top: -40px;
     display: block;
 }
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
 
